@@ -154,7 +154,7 @@ What comparisons are feasible with each data type?
 seattle = vega_data.seattle_weather()
 alt.Chart(seattle).mark_bar().encode(
     x = 'month(date):O',
-    y = 'average(precipitation):Q'
+    y = 'average(precipitation):O'
 )
 ```
 
@@ -378,11 +378,11 @@ alt.Chart(data2000).mark_point(filled=True).encode(
     alt.X('fertility:Q'),
     alt.Y('life_expect:Q'),
     alt.Size('pop:Q', scale=alt.Scale(range=[0,1000]),
-             legend=alt.Legend(orient='bottom', titleOrient='left')),
+             legend=alt.Legend(orient='right', titleOrient='left')),
     alt.Color('cluster:N', legend=None),
     alt.OpacityValue(0.5),
     alt.Tooltip('country:N'),
-    alt.Column('cluster:N')
+    alt.Row('cluster:N')
 ).properties(width=135, height=135)
 ```
 

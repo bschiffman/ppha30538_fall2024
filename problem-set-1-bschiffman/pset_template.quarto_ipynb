@@ -1,0 +1,105 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"PS 1\"\n",
+        "author: \"Ben Schiffman\"\n",
+        "date: \"10/5\"\n",
+        "format: pdf\n",
+        "execute:\n",
+        "  eval: true\n",
+        "  echo: true\n",
+        "---\n",
+        "\n",
+        "\n",
+        "1. **PS1:** Due Sat Oct 5 at 5:00PM Central. Worth 50 points. Initiate your **[repo](https://classroom.github.com/a/uhUVze3Y)** \n",
+        "\n",
+        "We use (`*`) to indicate a problem that we think might be time consuming. \n",
+        "\n",
+        "Steps to submit (5 points on PS1 and 10 points on PS2)\n",
+        "\n",
+        "1. \"This submission is my work alone and complies with the 30538 integrity\n",
+        "policy.\" Add your initials to indicate your agreement: \\*\\*\\_\\_\\*\\*\n",
+        "2. \"I have uploaded the names of anyone I worked with on the problem set **[here](https://docs.google.com/forms/d/1-zzHx762odGlpVWtgdIC55vqF-j3gqdAp6Pno1rIGK0/edit)**\"  \\*\\*\\_\\_\\*\\* (1 point)\n",
+        "3. Late coins used this pset: \\*\\*\\_\\_\\*\\* Late coins left after submission: \\*\\*\\_\\_\\*\\*\n",
+        "4. Knit your `ps1.qmd` to make `ps1.pdf`. \n",
+        "    * The PDF should not be more than 25 pages. Use `head()` and re-size figures when appropriate. \n",
+        "5. Push  `ps1.qmd` and `ps1.pdf` to your github repo. It is fine to use Github Desktop.\n",
+        "6. Submit `ps1.pdf` via Gradescope (4 points) \n",
+        "7. Tag your submission in Gradescope\n",
+        "\n",
+        "\n",
+        "## Read in one percent sample (15 Points)\n",
+        "\n",
+        "1.  "
+      ],
+      "id": "986135e0"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import pandas as pd \n",
+        "import os\n",
+        "import time\n",
+        "\n",
+        "\n",
+        "pset_dpath = r\"/Users/benschiffman/Desktop/Python 2/ppha30538_fall2024/problem_sets/ps1/data/\"\n",
+        "\n",
+        "oneperc_path = r\"parking_tickets_one_percent.csv\"\n",
+        "\n",
+        "start_time = time.time()\n",
+        "data = pd.read_csv(os.path.join(pset_dpath, oneperc_path))\n",
+        "end_time = time.time()\n",
+        "total_time = end_time - start_time\n",
+        "\n",
+        "print(\"it takes\", total_time, \"seconds to read this file\")\n",
+        "print(len(data))\n",
+        "assert len(data) == 287458, \"Well, try again\""
+      ],
+      "id": "a1735845",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "it takes 0.581108808517456 seconds to read this file.\n",
+        "1. \n",
+        "\n",
+        "1.  \n",
+        "\n",
+        "## Cleaning the data and benchmarking (15 Points)\n",
+        "\n",
+        "1.  \n",
+        "\n",
+        "1.  \n",
+        "\n",
+        "## Visual Encoding (15 Points)\n",
+        "\n",
+        "1. \n",
+        "1. \n",
+        "1. \n",
+        "1. \n",
+        "1. \n",
+        "1. \n",
+        "1. "
+      ],
+      "id": "cdd2916a"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/benschiffman/Desktop/Python 2/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
