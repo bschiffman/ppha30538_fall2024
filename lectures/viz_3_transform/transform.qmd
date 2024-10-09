@@ -205,6 +205,13 @@ Hint: if you aren't sure how to aggregate the x-variable, go back to the first v
 2. *Pair* -- compare your results with person next to you
 
 3. *Share* -- discuss results as a class
+```{python}
+alt.Chart(movies_url).mark_area().encode(
+    alt.X('month(Release_Date):T'),
+    alt.Y("average(US_Gross):Q")
+)
+```
+
 
 
 ## Aggregation: summary
